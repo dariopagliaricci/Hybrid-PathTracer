@@ -6,7 +6,7 @@ A physically based path tracer that runs entirely in a GLSL fragment shader — 
 
 Forked from [GLSL-PathTracer by Asif Ali](https://github.com/knightcrawler25/GLSL-PathTracer)
 
-![Stormtrooper](./screenshots/stormtrooper.jpg)
+![Cornell Box with Three Spheres](./screenshots/cornell_box_three_spheres.jpg)
 
 Features
 --------
