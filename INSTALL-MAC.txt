@@ -1,0 +1,61 @@
+Hybrid-PathTracer - macOS (Apple Silicon) Build Instructions
+-------------------------------------------------------------
+
+This is a personal fork of the original [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer),
+adapted and optimized by Dario Pagliaricci for Apple Silicon (M1/M2/M3) with GLSL 410 and OpenGL 4.1 compatibility.
+
+Dependencies
+------------
+Install required libraries using Homebrew:
+
+    brew install cmake sdl2 openimagedenoise
+
+Build Instructions
+------------------
+
+1. Clone this repository:
+
+    git clone https://github.com/dariopagliaricci/Hybrid-PathTracer.git
+    cd Hybrid-PathTracer
+
+2. Create and enter the build directory:
+
+    mkdir build
+    cd build
+
+3. Run CMake to configure the project:
+
+    cmake .. -DCMAKE_BUILD_TYPE=Release
+
+4. Build the project:
+
+    make -j
+
+5. Run the path tracer:
+
+    ./PathTracer
+
+Additional Notes
+----------------
+
+- This fork uses `gl3wApple` as the OpenGL loader instead of glad.
+- All shaders have been upgraded to `#version 410 core` for OpenGL 4.1 on macOS.
+- The code is compatible with macOS Ventura and newer, running on Apple Silicon hardware.
+- If you encounter macOS driver warnings (e.g., about `GLD_TEXTURE_INDEX_2D_ARRAY`), they're handled internally.
+
+Samples and Assets
+------------------
+
+The original project provided sample GLTF and OBJ scenes via Google Drive:
+https://drive.google.com/file/d/1UFMMoVb5uB7WIvCeHOfQ2dCQSxNMXluB/view
+
+Place the `assets/` folder in the root directory alongside the executable, or adjust paths accordingly.
+
+License and Attribution
+-----------------------
+
+This project is based on the original work by Asif Ali (MIT License).
+
+Modifications and Apple Silicon adaptation by Dario Pagliaricci, 2025.
+
+MIT License — see LICENSE.txt.
