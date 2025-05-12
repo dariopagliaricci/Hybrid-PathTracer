@@ -371,8 +371,8 @@ void MainLoop(void* arg)
             renderOptions.uniformLightCol = Vec3::Pow(uniformLightCol, 2.2);
 
             reloadShaders |= ImGui::Checkbox("Enable Environment Map", &renderOptions.enableEnvMap);
-            optionsChanged |= ImGui::SliderFloat("Enviornment Map Intensity", &renderOptions.envMapIntensity, 0.1f, 10.0f);
-            optionsChanged |= ImGui::SliderFloat("Enviornment Map Rotation", &renderOptions.envMapRot, 0.0f, 360.0f);
+            optionsChanged |= ImGui::SliderFloat("Environment Map Intensity", &renderOptions.envMapIntensity, 0.1f, 10.0f);
+            optionsChanged |= ImGui::SliderFloat("Environment Map Rotation", &renderOptions.envMapRot, 0.0f, 360.0f);
             reloadShaders |= ImGui::Checkbox("Hide Emitters", &renderOptions.hideEmitters);
             reloadShaders |= ImGui::Checkbox("Enable Background", &renderOptions.enableBackground);
             optionsChanged |= ImGui::ColorEdit3("Background Color", (float*)&renderOptions.backgroundCol, 0);

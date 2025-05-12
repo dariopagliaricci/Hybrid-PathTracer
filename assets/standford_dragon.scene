@@ -1,0 +1,71 @@
+renderer
+{
+	resolution 1920 1080
+	maxdepth 7
+	tilewidth 240
+	tileheight 135
+	envmapfile HDR/small_empty_room_1_4k.hdr
+	envmapintensity 1.0
+}
+
+camera
+{
+	position -1.25 1.25 2.45
+    lookat 0.0 0.55 0.0
+    fov 40
+}
+
+material silver
+{
+	color 1.0 1.0 1.0
+	roughness 0.1
+	metallic 1.0	
+}
+
+material gold
+{
+	color 1.0 0.71 0.29
+	roughness 0.1
+	metallic 1.0	
+}
+
+material redMetallic
+{
+	color 0.3216 0.0 1.0
+    roughness 0.011
+    metallic 0.648
+    speculartint 0.412
+    subsurface 0.166
+    ior 1.5
+}
+
+material white
+{
+	color 1.0 1.0 1.0
+	roughness 0.01
+	metallic 0.0
+}
+
+material black
+{
+	color 0.1 0.1 0.1
+	roughness 0.01
+	metallic 1.0
+}
+
+material glass
+{
+	color 1.0 1.0 1.0
+	materialType 1.0
+	ior 1.45
+}
+
+mesh
+{
+	file stanford_dragon/stanford_dragon.obj
+	material redMetallic
+    position 0.0 0.10 0.0
+    rotate 0.0 5.57 0.0
+    scale 0.9 0.9 0.9
+}
+
