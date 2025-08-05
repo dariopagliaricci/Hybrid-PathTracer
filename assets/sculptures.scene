@@ -1,0 +1,32 @@
+camera
+{
+    position 0.30 0.70 2.20
+    lookat   0.00  0.70 0.00
+    fov 38
+}
+
+renderer
+{
+    resolution 1920 1080
+    maxdepth 7
+    tilewidth 240
+    tileheight 135
+    envmapfile HDR/small_empty_room_1_4k.hdr
+	envmapintensity 1.0
+}
+
+material SculptureMarble
+{
+    albedotexture sculptures/textures/Black_Crocodile_marble_02.jpg
+    roughness 0.3
+    metallic 0.0
+}
+
+mesh
+{
+    file sculptures/sculptures.obj
+    material SculptureMarble
+    position 0.0 0.5 0.0
+    rotate 0.0 0.0 0.0
+    scale 1.0 1.0 1.0
+}
