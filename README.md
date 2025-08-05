@@ -7,6 +7,11 @@ A physically based path tracer that runs entirely in a GLSL fragment shader — 
 Forked from [GLSL-PathTracer by Asif Ali](https://github.com/knightcrawler25/GLSL-PathTracer)
 
 ![Cornell Box with Three Spheres](./screenshots/cornell_box_three_spheres.jpg)
+--------
+![Sculptures Scene](./screenshots/sculptures.jpg)
+-------
+![Stanford Dragon](./screenshots/stanford_dragon.jpg)
+
 
 Features
 --------
@@ -29,42 +34,31 @@ Build Instructions
 --------
 Please see INSTALL-MAC.txt. Works in Apple Silicon only. 
 
-Sample Scenes
 --------
-A couple of sample scenes are provided in the repository. Additional scenes can be downloaded from here:
-https://drive.google.com/file/d/1UFMMoVb5uB7WIvCeHOfQ2dCQSxNMXluB/view
 
-Gallery
---------
-![Monster](./screenshots/Monster.jpg)
---------
-![WW2](./screenshots/ww2.jpg)
---------
-![RenderMan Swatch](./screenshots/Renderman_swatch.jpg)
---------
-![Dragon](./screenshots/dragon.jpg)
---------
-![Stormtrooper](./screenshots/stormtrooper.jpg)
---------
-![Panther](./screenshots/panther.jpg)
---------
-![Crown](./screenshots/crown.jpg)
---------
-![Mustang](./screenshots/Mustang.jpg)
---------
-![Mustang_Red](./screenshots/Mustang_Red.jpg)
---------
-![Hyperion](./screenshots/hyperion.jpg)
---------
-![Ajax](./screenshots/ajax_materials.jpg)
---------
-![Dining Room](./screenshots/DiningRoom.jpg)
---------
-![Rank3PoliceUnit](./screenshots/rank3police_color_corrected.jpg)
---------
-![Staircase](./screenshots/staircase.jpg)
---------
-![Substance Boy](./screenshots/MeetMat_Maps.jpg)
+## Scenes
+
+Sample Scenes
+
+The `assets/` folder contains several `.scene` files you can load into the path tracer. Each defines a unique setup of geometry, materials, camera, and environment.
+
+### Available scenes:
+
+| Scene file                          | Description                        |
+|-------------------------------------|------------------------------------|
+| `cornell_box_orig.scene`           | Classic Cornell Box with diffuse walls and a light source. |
+| `cornell_box_sphere.scene`         | Cornell Box with one reflective sphere. |
+| `cornell_box_three_spheres.scene`  | Cornell Box with three spheres (diffuse, metallic, glass). |
+| `teapot.scene`                     | Test scene using the classic teapot mesh. |
+| `volume_cube.scene`                | Volume rendering test with a dense cube. |
+| `hyperion_rect_lights.scene`       | Hyperion scene with rectangular lights. |
+| `hyperion_sphere_light.scene`      | Hyperion scene with a spherical emitter. |
+| `sculptures.scene`                 | Multi-material sculptures using JPEG textures. |
+| `stanford_dragon.scene`            | Stanford dragon mesh rendered with metallic/glossy materials. |
+
+
+Additional scenes can be downloaded from here:
+https://drive.google.com/file/d/1UFMMoVb5uB7WIvCeHOfQ2dCQSxNMXluB/view
 
 References/Credits
 --------
